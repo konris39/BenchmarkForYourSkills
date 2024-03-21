@@ -36,6 +36,7 @@ public class Menu extends JFrame implements ActionListener {
         this.getContentPane().setBackground(new Color(95, 158, 160));
     }
 
+
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == play) {
