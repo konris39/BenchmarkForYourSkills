@@ -20,18 +20,16 @@ public class GameFrame extends JFrame implements ActionListener {
         gamePanel = new JPanel();
         gamePanel.setLayout(null);
         gamePanel.setBounds(0, 0, winWid, winHei);
-        gamePanel.setBackground(new Color(95, 158, 160)); // Light sea green background
+        gamePanel.setBackground(new Color(95, 158, 160));
 
-        // Main game button, now red
         button = new JButton();
         button.setBounds(xRand, yRand, 50, 50);
         button.addActionListener(this);
         button.setContentAreaFilled(false);
         button.setOpaque(true);
-        button.setBackground(Color.RED); // Button color changed to red
+        button.setBackground(Color.RED);
         button.setBorder(BorderFactory.createLineBorder(Color.BLACK, 2, true));
 
-        // "Back to Menu" button
         backToMenuButton = new JButton("Back to Menu");
         backToMenuButton.addActionListener(e -> {
             this.dispose();
@@ -43,7 +41,6 @@ public class GameFrame extends JFrame implements ActionListener {
         backToMenuButton.setBackground(Color.GRAY);
         backToMenuButton.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 2, true));
 
-        // "Retry" button
         retryButton = new JButton("Retry");
         retryButton.addActionListener(e -> {
             this.dispose();
@@ -62,11 +59,10 @@ public class GameFrame extends JFrame implements ActionListener {
         timerLabel.setBounds(10, 35, 150, 25);
         timerLabel.setForeground(Color.WHITE);
 
-        // Panel for "Back to Menu" and "Retry" buttons, centered
         buttonPanel = new JPanel();
         buttonPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 0));
-        int panelWidth = 250; // Width to contain both buttons and the gap
-        int panelHeight = 50; // Height of the tallest element
+        int panelWidth = 250;
+        int panelHeight = 50;
         buttonPanel.setBounds((winWid - panelWidth) / 2, (winHei - panelHeight) / 2, panelWidth, panelHeight);
         buttonPanel.setOpaque(false);
 
@@ -136,9 +132,8 @@ public class GameFrame extends JFrame implements ActionListener {
             score++;
             scoreLabel.setText("Score: " + score);
 
-            // Adjust the random positioning for the larger button size
-            xRand = rand.nextInt(winWid - 100); // Consider the button's new size
-            yRand = rand.nextInt(winHei - 100); // Consider the button's new size
+            xRand = rand.nextInt(winWid - 100);
+            yRand = rand.nextInt(winHei - 100);
             button.setBounds(xRand, yRand, 50, 50);
 
             moveTimer.restart();
