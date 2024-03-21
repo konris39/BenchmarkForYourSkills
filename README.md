@@ -2,7 +2,7 @@ Hello,
 This is my simple benchmark, to test your personal skills as:
 
 -aim
-click Play to test how much can you get!
+-> click "Play" to test how much can you get!
 ![image](https://github.com/konris39/BenchmarkForYourSkills/assets/151552959/0b62ec83-a696-4cc8-863a-752f37bcbcb3)
 
 Thats how it looks like :DD 
