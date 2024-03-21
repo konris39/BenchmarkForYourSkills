@@ -9,12 +9,22 @@ public class Menu extends JFrame implements ActionListener {
 
     Menu() {
         play = new JButton("Play");
-        play.setBounds(400, 100, 100, 50);
+        play.setBounds(winWid / 2 - 158, winHei / 2 - 200, 300, 100);
         play.addActionListener(this);
+        play.setFont(new Font("Arial", Font.BOLD, 20));
+        play.setBackground(Color.RED);
+        play.setForeground(Color.WHITE);
+        play.setBorder(BorderFactory.createLineBorder(Color.BLACK, 4, true));
+        play.setFocusPainted(false);
 
         options = new JButton("Options");
-        options.setBounds(400, 200, 100, 50);
+        options.setBounds(winWid / 2 - 158, winHei / 2 - 80, 300, 100);
         options.addActionListener(this);
+        options.setFont(new Font("Arial", Font.BOLD, 20));
+        options.setBackground(Color.BLUE);
+        options.setForeground(Color.WHITE);
+        options.setBorder(BorderFactory.createLineBorder(Color.BLACK, 4, true));
+        options.setFocusPainted(false);
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
@@ -23,7 +33,7 @@ public class Menu extends JFrame implements ActionListener {
         this.add(options);
         this.setVisible(true);
         this.setResizable(false);
-        this.getContentPane().setBackground(Color.GREEN);
+        this.getContentPane().setBackground(new Color(95, 158, 160));
     }
 
     @Override
