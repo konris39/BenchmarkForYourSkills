@@ -1,5 +1,6 @@
 Hello,
 This is my simple benchmark, to test your personal skills as:
+
 -aim
 
 ![image](https://github.com/konris39/BenchmarkForYourSkills/assets/151552959/0b62ec83-a696-4cc8-863a-752f37bcbcb3)
@@ -19,6 +20,7 @@ UI is very simplistic (it will be updated a little bit later on)
 You can set difficulty (the time between each respawn of the target!)
 
 TODO:
+
 -Better UI
 -Clicks per second check 
 
