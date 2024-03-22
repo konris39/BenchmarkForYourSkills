@@ -12,7 +12,7 @@ Thats how "aim" test looks like :DD
 
 And that is how "CPS" looks like :DD
 
-//picture of CPS
+![image](https://github.com/konris39/BenchmarkForYourSkills/assets/151552959/9555bbe6-c765-4abb-bc4a-cc0aa3e8de9c)
 
 End Screen looks like this:
 
