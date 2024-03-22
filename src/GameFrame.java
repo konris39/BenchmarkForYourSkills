@@ -15,6 +15,7 @@ public class GameFrame extends JFrame implements ActionListener {
     private float remainingTime = 30.0f;
     Timer moveTimer, gameTimer;
     private int difficulty = 1000;
+    private long startTime;
 
     GameFrame() {
         gamePanel = new JPanel();
@@ -100,10 +101,14 @@ public class GameFrame extends JFrame implements ActionListener {
             button.setBounds(xRand, yRand, 50, 50);
         });
 
+        startTime = System.nanoTime();
+
         gameTimer = new Timer(100, e -> {
-            remainingTime -= 0.1f;
-            timerLabel.setText(String.format("Time: %.2f", remainingTime));
-            if (remainingTime <= 0) {
+            long elapsed = System.nanoTime() - startTime;
+            float timeLeft = 30.0f - elapsed / 1_000_000_000.0f;
+            timerLabel.setText(String.format("Time: %.2f", Math.max(timeLeft, 0)));
+
+            if (timeLeft <= 0) {
                 button.setEnabled(false);
                 moveTimer.stop();
                 gameTimer.stop();
