@@ -2,12 +2,17 @@ Hello,
 This is my simple benchmark, to test your personal skills as:
 
 -aim
--> click "Play" to test how much can you get!
-![image](https://github.com/konris39/BenchmarkForYourSkills/assets/151552959/0b62ec83-a696-4cc8-863a-752f37bcbcb3)
+-> click "Play" to test how good your "aim" is, or "CPS" how fast can you click!
 
-Thats how it looks like :DD 
+![image](https://github.com/konris39/BenchmarkForYourSkills/assets/151552959/d1087374-2a63-4957-8a90-97ced1008f35)
+
+Thats how "aim" test looks like :DD 
 
 ![image](https://github.com/konris39/BenchmarkForYourSkills/assets/151552959/9cbbed3e-f51e-4673-a8c6-612863298fac)
+
+And that is how "CPS" looks like :DD
+
+//picture of CPS
 
 End Screen looks like this:
 
@@ -19,8 +24,4 @@ And the options panel looks like that:
 
 UI is very simplistic!
 You can set difficulty (the time between each respawn of the target!)
-
-TODO:
-
--Clicks per second check 
 
