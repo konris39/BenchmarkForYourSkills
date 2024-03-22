@@ -13,7 +13,7 @@ public class CPS extends JFrame implements ActionListener {
     private Timer countDownTimer;
 
     public CPS() {
-        this.setSize(600, 400);
+        this.setSize(800, 600);
         this.setLayout(new BorderLayout());
 
         this.getContentPane().setBackground(Color.DARK_GRAY);
@@ -25,7 +25,10 @@ public class CPS extends JFrame implements ActionListener {
         clickButton = new JButton("Click Me FAST!");
         clickButton.setFont(new Font("Arial", Font.BOLD, 30));
         clickButton.addActionListener(this);
-        clickButton.setPreferredSize(new Dimension(200, 100));
+        clickButton.setPreferredSize(new Dimension(300, 150));
+        clickButton.setFocusPainted(false);
+        clickButton.setBackground(new Color(255, 102, 102));
+        clickButton.setBorder(BorderFactory.createLineBorder(Color.BLACK, 3));
 
         centerPanel.add(clickButton);
 
